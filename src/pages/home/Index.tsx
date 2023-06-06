@@ -4,6 +4,7 @@ import { AppLayout } from '../../layout/Index';
 import LandingPage from '../../layout/landing/Index';
 import Article from './Article';
 import Miner from './Miner';
+import Crypto from './Crypto';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <HomeWrapper>
         <Article />
         <Miner />
+        <Crypto />
       </HomeWrapper>
     </AppLayout>
   )

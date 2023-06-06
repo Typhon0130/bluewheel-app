@@ -6,6 +6,7 @@ import {
   CardWrapper,
   Card,
   CardBtn,
+  CardContent
 } from "./style";
 
 import { BsArrowUpRight } from "react-icons/bs";
@@ -37,11 +38,13 @@ const Article = () => {
           {articledata.map((item, key) => (
             <Card>
               <img src={item.image} alt="" />
-              <h6>{item.title}</h6>
-              <p>{item.desc}</p>
-              <CardBtn>
-                Read More <BsArrowUpRight />
-              </CardBtn>
+              <CardContent>
+                <h6>{item.title}</h6>
+                <p>{item.desc}</p>
+                <CardBtn>
+                  Read More <BsArrowUpRight />
+                </CardBtn>
+              </CardContent>
             </Card>
           ))}
         </CardWrapper>

@@ -17,7 +17,7 @@ const LandingPage = () => {
             Bitcoin runs on <span>Hashrate</span>
           </h1>
           <p>
-            orem ipsum dolor sit amet. Eum molestias dolorem rem iste magni id
+            Lorem ipsum dolor sit amet. Eum molestias dolorem rem iste magni id
             quod explicabo aut repellendus nihil qui esse eaque.
           </p>
         </LandingDesc>

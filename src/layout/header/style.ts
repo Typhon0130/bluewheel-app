@@ -55,7 +55,7 @@ export const NavItem = styled.div`
   a {
     color: #fff;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
     margin-left: 46px;
     cursor: pointer;

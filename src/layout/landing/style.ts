@@ -38,25 +38,33 @@ export const LandingDesc = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 830px;
   gap: 20px;
   h1 {
     font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 78px;
-    max-width: 700;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    max-width: 830x;
     width: 100%;
+    text-align: center;
     span {
       color: #5cf8e5;
     }
+    @media screen and (max-width: 930px) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 32px;
+      line-height: 48px;
+    }
   }
   p {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 28px;
     text-align: center;
-    max-width: 500;
+    max-width: 560px;
     width: 100%;
   }
 `;
