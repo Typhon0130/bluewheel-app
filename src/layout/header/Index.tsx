@@ -67,7 +67,6 @@ const Header: React.FC<HeaderProps> = ({ onMenuOpen }) => {
         <HeadLogo onClick={() => navigate("/")}>
           <img src="/assets/imgs/logo.png" alt="logo" />
         </HeadLogo>
-
         <HeaderNav>
           {headerTab.length > 0
             ? headerTab.map((item, key) => (

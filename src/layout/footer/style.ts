@@ -17,7 +17,7 @@ export const FooterContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   padding-top: 80px;
-  border-top: 1px solid #8A8A8A;
+  border-top: 1px solid #8a8a8a;
   @media screen and (max-width: 1024px) {
     flex-direction: column-reverse;
     gap: 25px;
@@ -104,6 +104,18 @@ export const FooterIcons = styled.div`
   align-items: flex-start;
   padding: 0px;
   gap: 32px;
+  @media screen and (max-width: 545px) {
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 735px) {
+    svg {
+      font-weight: 400;
+      width: 24px;
+      height: 24px;
+      line-height: 16px;
+      color: #8a8a8a;
+    }
+  }
   svg {
     font-weight: 400;
     width: 24px;
@@ -133,6 +145,9 @@ export const AboutDesc = styled.div`
     align-items: flex-end;
     gap: 45px;
   }
+  @media screen and (max-width: 545px) {
+    align-items: center;
+  }
 `;
 
 export const FooterAuthority = styled.div`
@@ -140,14 +155,19 @@ export const FooterAuthority = styled.div`
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
-  width: 100%;
+  width: 95%;
+  @media screen and (max-width: 545px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   p {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 180%;
     span {
-        text-decoration: underline;
+      text-decoration: underline;
     }
   }
 `;

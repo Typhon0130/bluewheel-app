@@ -11,6 +11,7 @@ export const HeaderWrapper = styled.div`
   left: 0;
   z-index: 10;
   background-color: transparent;
+  transition: all .4s;
   &.header {
     background-color: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
@@ -54,7 +55,7 @@ export const NavItem = styled.div`
   a {
     color: #fff;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
     margin-left: 46px;
     cursor: pointer;
@@ -78,7 +79,7 @@ export const ButtonWrapper = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 6px;
-  color: #fff;
+  color: #142C2A;
   background-color: #3fcdc3;
   font-style: normal;
   font-weight: 600;
