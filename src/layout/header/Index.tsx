@@ -74,7 +74,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuOpen }) => {
                 <NavItem key={key}><Link to={item.direct}  className={location.pathname === item.direct ? "active" : "" }>{item.title} </Link></NavItem>
               ))
             : ""}
-          <ButtonWrapper>Enter App</ButtonWrapper>
+          <ButtonWrapper>Insight</ButtonWrapper>
         </HeaderNav>
         <HeaderMobielButton onClick={() => onMenuOpen()}>
           <span></span>
