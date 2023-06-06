@@ -77,7 +77,7 @@ const Footer = () => {
       </FooterContainer>
       <FooterAuthority>
           <p>
-            © 2023 <span>Stellart</span>, All rights reserved.
+            © 2023 <span>Hashrate</span>, All rights reserved.
           </p>
           <p>Terms of Service </p>
         </FooterAuthority>
