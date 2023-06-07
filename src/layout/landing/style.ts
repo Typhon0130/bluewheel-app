@@ -1,31 +1,18 @@
 import styled from "styled-components";
 
 export const LandingWrapper = styled.div`
-  padding-top: 130px;
-  /* background: url(assets/imgs/landing.png) no-repeat; */
+  padding: 380px 0 160px 0;
+  background: url("assets/imgs/landing.png") no-repeat;
   position: relative;
-  /* background-size: cover; */
+  background-size: cover;
   width: 100%;
   display: flex;
-
-background-color: transparent;
   align-items: center;
   justify-content: center;
-  padding-bottom: 80px;
-  & > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    object-fit: cover;
-  }
 `;
 
 export const LandingContainer = styled.div`
   display: flex;
-z-index: 2;
   position: relative;
   flex-direction: column;
   align-items: center;
