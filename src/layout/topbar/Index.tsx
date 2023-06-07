@@ -40,7 +40,7 @@ export const topbarData = [
 const Topbar = () => {
   return (
     <TopbarWrapper>
-      <TopbarContainer>
+      <TopbarContainer className="topbar" >
         <BarItems>
           {topbarData.length > 0
             ? topbarData.map((item, key) => (

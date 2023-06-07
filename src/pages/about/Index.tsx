@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutWrapper, MiningCotainer } from "./style";
+import { AboutWrapper } from "./style";
 import { AppLayout } from "../../layout/Index";
 import LandingPage from "../../layout/landing/Index";
 import Aboutus from "./Aboutus";

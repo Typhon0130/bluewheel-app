@@ -122,6 +122,11 @@ export const FooterIcons = styled.div`
     height: 24px;
     line-height: 16px;
     color: #8a8a8a;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+      color: #3fcdc3;
+    }
   }
 `;
 
