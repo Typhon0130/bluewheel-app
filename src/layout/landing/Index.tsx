@@ -10,7 +10,7 @@ import {
 const LandingPage = () => {
   return (
     <LandingWrapper>
-      <img src="/assets/imgs/landing-2.png" alt="" />
+      {/* <img src="/assets/imgs/landing-2.png" alt="" /> */}
       <LandingContainer>
         <LandingDesc>
           <h1>
