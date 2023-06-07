@@ -186,8 +186,13 @@ export const CardIcons = styled.div`
   justify-content: center;
   gap: 80px;
   width: 100%;
+  cursor: pointer;
   svg {
-    color: #3fcdc3;
+    color: #777;
+    transition: all .3s;
+    &:hover {
+     color: #3fcdc3;
+    }
   }
 `;
 

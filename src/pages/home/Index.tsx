@@ -5,6 +5,8 @@ import LandingPage from '../../layout/landing/Index';
 import Article from './Article';
 import Miner from './Miner';
 import Crypto from './Crypto';
+import Hashrate from './Hashrate';
+import Rig from './Rig';
 
 const Home = () => {
   return (
@@ -13,7 +15,9 @@ const Home = () => {
       <HomeWrapper>
         <Article />
         <Miner />
+        <Hashrate />
         <Crypto />
+        <Rig />
       </HomeWrapper>
     </AppLayout>
   )

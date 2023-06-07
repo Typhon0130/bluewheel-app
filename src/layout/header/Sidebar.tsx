@@ -6,7 +6,7 @@ import {
   SidebarButton,
   CloseButton,
 } from "./style";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 export const headerTab = [
@@ -43,7 +43,6 @@ type SidebarProps = {
 
 const Sidebar = ({ isshow, onClose }: SidebarProps) => {
   console.log(isshow)
-  const navigate = useNavigate();
   const location = useLocation();
   return (
     <SidebarWrapper isshow={isshow}>
@@ -64,7 +63,7 @@ const Sidebar = ({ isshow, onClose }: SidebarProps) => {
             ))
           : ""}
       </SidebarNav>
-      <SidebarButton>Enter App</SidebarButton>
+      <SidebarButton>Insight</SidebarButton>
     </SidebarWrapper>
   );
 };
