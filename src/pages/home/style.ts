@@ -316,7 +316,7 @@ export const HashContainer = styled.div`
   align-items: center;
   justify-content: center;
   max-width: 1200px;
-  width: 100%;
+  width: 95%;
   gap: 40px;
 `;
 
@@ -325,7 +325,14 @@ export const HashContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  @media screen and (max-width: 525px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    h1 {
+      font-size: 36px !important;
+    }
+  }
   h1 {
     font-style: normal;
     font-weight: 400;
@@ -336,11 +343,11 @@ export const HashContent = styled.div`
       color: #5cf8e5;
     }
     @media screen and (max-width: 930px) {
-      font-size: 48px;
+      font-size: 36px;
       line-height: 56px;
     }
-    @media screen and (max-width: 375px) {
-      font-size: 32px;
+    @media screen and (max-width: 625px) {
+      font-size: 24px;
       line-height: 48px;
     }
   }
@@ -379,7 +386,7 @@ export const HashBtn = styled.div`
 `;
 
 export const HashTable = styled.table`
-  max-width: 1200px;
+  min-width: 1200px;
   width: 100%;
   border-collapse: collapse;
 `;
@@ -412,6 +419,7 @@ export const HeadItem = styled.th`
 
 export const BodyItem = styled.td`
   padding: 20px;
+  border-bottom: 1px solid #c1c7cd38;
   &:last-child {
     color: #ffd369;
   }
@@ -431,12 +439,12 @@ export const RigContainer = styled.div`
   align-items: center;
   justify-content: center;
   max-width: 1200px;
-  width: 100%;
+  width: 95%;
   gap: 40px;
 `;
 
 export const RigTable = styled.table`
-  max-width: 1200px;
+  min-width: 1200px;
   width: 100%;
   border-collapse: collapse;
 `;
@@ -497,7 +505,14 @@ export const RigContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  @media screen and (max-width: 525px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    h1 {
+      font-size: 36px !important;
+    }
+  }
   h1 {
     font-style: normal;
     font-weight: 400;
@@ -508,11 +523,11 @@ export const RigContent = styled.div`
       color: #5cf8e5;
     }
     @media screen and (max-width: 930px) {
-      font-size: 48px;
+      font-size: 36px;
       line-height: 56px;
     }
-    @media screen and (max-width: 375px) {
-      font-size: 32px;
+    @media screen and (max-width: 625px) {
+      font-size: 24px;
       line-height: 48px;
     }
   }
@@ -520,4 +535,13 @@ export const RigContent = styled.div`
 
 export const BodyRigItem = styled.td`
   padding: 20px;
+  border-bottom: 1px solid #c1c7cd38;
+`;
+
+export const TableContent = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: auto;
 `;

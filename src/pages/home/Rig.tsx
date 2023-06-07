@@ -9,6 +9,7 @@ import {
   HeadItem,
   RigBody,
   BodyRigItem,
+  TableContent,
 } from "./style";
 
 const RigHeadData = [
@@ -38,20 +39,22 @@ const Rig = () => {
       <RigContainer>
         <RigContent>
           <h1>Rigrate Distribution</h1>
-          <RigBtn>View All Pools</RigBtn>
+          <RigBtn>Rigs Search</RigBtn>
         </RigContent>
-        <RigTable>
-          <RigHead>
-            {RigHeadData.map((item, key) => (
-              <HeadItem key={key}>{item}</HeadItem>
-            ))}
-          </RigHead>
-          <RigBody>
-            {bodyData.map((item, key) => (
-              <BodyRigItem key={key}>{item}</BodyRigItem>
-            ))}
-          </RigBody>
-        </RigTable>
+        <TableContent>
+          <RigTable>
+            <RigHead>
+              {RigHeadData.map((item, key) => (
+                <HeadItem key={key}>{item}</HeadItem>
+              ))}
+            </RigHead>
+            <RigBody>
+              {bodyData.map((item, key) => (
+                <BodyRigItem key={key}>{item}</BodyRigItem>
+              ))}
+            </RigBody>
+          </RigTable>
+        </TableContent>
       </RigContainer>
     </RigWrapper>
   );

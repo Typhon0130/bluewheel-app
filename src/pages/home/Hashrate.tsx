@@ -9,6 +9,7 @@ import {
   HashTable,
   HeadItem,
   BodyItem,
+  TableContent
 } from "./style";
 
 const hashHeadData = [
@@ -38,18 +39,20 @@ const Hashrate = () => {
           <h1>Hashrate Distribution</h1>
           <HashBtn>View All Pools</HashBtn>
         </HashContent>
-        <HashTable>
-          <HashHead>
-            {hashHeadData.map((item, key) => (
-              <HeadItem key={key}>{item}</HeadItem>
-            ))}
-          </HashHead>
-          <HashBody>
-            {bodyData.map((item, key) => (
-              <BodyItem key={key}>{item}</BodyItem>
-            ))}
-          </HashBody>
-        </HashTable>
+        <TableContent>
+          <HashTable>
+            <HashHead>
+              {hashHeadData.map((item, key) => (
+                <HeadItem key={key}>{item}</HeadItem>
+              ))}
+            </HashHead>
+            <HashBody>
+              {bodyData.map((item, key) => (
+                <BodyItem key={key}>{item}</BodyItem>
+              ))}
+            </HashBody>
+          </HashTable>
+        </TableContent>
       </HashContainer>
     </HashWrapper>
   );
