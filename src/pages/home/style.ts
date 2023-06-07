@@ -545,3 +545,110 @@ export const TableContent = styled.div`
   width: 100%;
   overflow: auto;
 `;
+
+export const StokeWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const StokeContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 95%;
+  gap: 10px;
+  @media screen and (max-width: 1110px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+  }
+`;
+
+export const StokeCard = styled.div`
+  max-width: 580px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  @media screen and (max-width: 1110px) {
+    max-width: 100%;
+  }
+`;
+
+export const StokeContent = styled.div`
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 2;
+  border-radius: 20px;
+  box-shadow: 1px 4px 12px rgba(61, 179, 162, 0.25);
+
+`;
+
+export const StokeTitle = styled.div`
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+`;
+
+export const StokeDesc = styled.div`
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+`;
+
+export const StokeView = styled.div`
+  position: absolute;
+  bottom: -56px;
+  left: 38%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  width: 119px;
+  height: 119px;
+  border-radius: 50%;
+  background: #22292e;
+  padding-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+`;
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+  padding: 35px 1vw;
+  background: #22292e;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  z-index: 2;
+  width: 100%;
+`;
+
+export const StokeChart = styled.div`
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(158, 218, 209, 0.1) 0%,
+    rgba(61, 179, 162, 0.1) 100%
+  );
+  background: linear-gradient(180deg, rgba(18, 87, 75, 0.11) 0%, #0e161b 100%);
+`;

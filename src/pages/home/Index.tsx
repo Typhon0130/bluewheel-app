@@ -7,6 +7,8 @@ import Miner from './Miner';
 import Crypto from './Crypto';
 import Hashrate from './Hashrate';
 import Rig from './Rig';
+import Stoke from './Stoke';
+
 
 const Home = () => {
   return (
@@ -16,8 +18,9 @@ const Home = () => {
         <Article />
         <Miner />
         <Hashrate />
-        <Crypto />
+        <Stoke />
         <Rig />
+        <Crypto />
       </HomeWrapper>
     </AppLayout>
   )
