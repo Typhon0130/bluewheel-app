@@ -79,9 +79,16 @@ export const CardWrapper = styled.div`
     margin-left: 15px;
   }
   @media screen and (max-width: 768px) {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    & > :not(:first-child) {
+      margin-left: 0px;
+    }
+  }
+  @media screen and (max-width: 654px) {
+    display: flex !important;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 40px;
   }
 `;
@@ -541,9 +548,9 @@ export const BodyRigItem = styled.td`
 export const TableContent = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
-  overflow: auto;
+  overflow-x: scroll;
 `;
 
 export const StokeWrapper = styled.div`
@@ -559,8 +566,8 @@ export const StokeContainer = styled.div`
   justify-content: space-between;
   max-width: 1200px;
   width: 95%;
-  gap: 10px;
-  @media screen and (max-width: 1110px) {
+  gap: 20px;
+  @media screen and (max-width: 654px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -592,7 +599,6 @@ export const StokeContent = styled.div`
   z-index: 2;
   border-radius: 20px;
   box-shadow: 1px 4px 12px rgba(61, 179, 162, 0.25);
-
 `;
 
 export const StokeTitle = styled.div`
@@ -651,4 +657,463 @@ export const StokeChart = styled.div`
     rgba(61, 179, 162, 0.1) 100%
   );
   background: linear-gradient(180deg, rgba(18, 87, 75, 0.11) 0%, #0e161b 100%);
+`;
+
+export const FarmWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+`;
+
+export const FarmContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 95%;
+  gap: 40px;
+`;
+
+export const FarmContent = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 525px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    h1 {
+      font-size: 36px !important;
+    }
+  }
+  h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    width: 100%;
+    span {
+      color: #5cf8e5;
+    }
+    @media screen and (max-width: 930px) {
+      font-size: 36px;
+      line-height: 56px;
+    }
+    @media screen and (max-width: 625px) {
+      font-size: 24px;
+      line-height: 48px;
+    }
+  }
+`;
+
+export const FarmBtn = styled.div`
+  cursor: pointer;
+  width: 223px;
+  height: 50px;
+  flex: none;
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #3fcdc3;
+  border-radius: 6px;
+  /* filter: drop-shadow(1px 1px 0px #772436); */
+  color: #3fcdc3;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  transition: all 0.3s;
+  user-select: none;
+  &:hover {
+    color: #142c2a;
+    background: #3fcdc3;
+  }
+  &.activebtn {
+    color: #142c2a;
+    background: #3fcdc3;
+  }
+`;
+
+export const FarmCardWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  & > :not(:first-child) {
+    margin-left: 15px;
+  }
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+`;
+
+export const FarmCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  background: #212931;
+  box-shadow: 1px 4px 12px rgba(61, 179, 162, 0.25);
+  border-radius: 7px;
+  max-width: 346px;
+  width: 100%;
+  @media screen and (max-width: 1024px) {
+    max-width: 100%;
+  }
+  &:hover {
+  }
+  img {
+    width: 100%;
+    border-radius: 7px;
+  }
+`;
+
+export const FarmCardContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  width: 90%;
+`;
+
+export const FarmCardTitle = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  svg {
+    font-size: 24px;
+  }
+  @media screen and (max-width: 1024px) {
+    justify-content: center;
+  }
+`;
+
+export const FarmCardDesc = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  svg {
+    font-size: 24px;
+    @media screen and (max-width: 425px) {
+      font-size: 40px;
+    }
+    @media screen and (max-width: 425px) {
+      font-size: 24px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    justify-content: center;
+  }
+`;
+
+export const FarmCardBtn = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 16px;
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+`;
+
+export const FarmCardPriceBtn = styled.div`
+  cursor: pointer;
+  height: 40px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex: 1;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #3fcdc3;
+  border: 2px solid #3fcdc3;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  transition: all 0.3s;
+  padding: 0 6px;
+  margin-bottom: 33px;
+  &:hover {
+    border: 2px solid #3fcdc3;
+    border-radius: 6px;
+    color: #3fcdc3;
+    background-color: transparent;
+    svg {
+      color: #3fcdc3;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+`;
+
+export const FarmCardGridBtn = styled.div`
+  cursor: pointer;
+  height: 40px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 4px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #3fcdc3;
+  color: #3fcdc3;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  transition: all 0.3s;
+  padding: 0 6px;
+  margin-bottom: 33px;
+  &:hover {
+    border: 2px solid #3fcdc3;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #3fcdc3;
+    svg {
+      color: #3fcdc3;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    width: 100%;
+  }
+`;
+
+export const FarmCardDescContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  @media screen and (max-width: 1024px) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+`;
+
+export const WorldWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: url("assets/imgs/blockchain.png") no-repeat;
+  background-size: cover;
+  margin: 80px 0;
+`;
+
+export const WorldContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  max-width: 1200px;
+  width: 95%;
+  padding: 80px 0;
+  text-align: center;
+
+  h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    span {
+      color: #3fcdc3;
+    }
+    @media screen and (max-width: 930px) {
+      font-size: 36px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 32px;
+      line-height: 48px;
+    }
+  }
+`;
+
+export const WorldButton = styled.div`
+  cursor: pointer;
+  width: 240px;
+  height: 50px;
+  flex: none;
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #3fcdc3;
+  border-radius: 6px;
+  /* filter: drop-shadow(1px 1px 0px #772436); */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  transition: all 0.3s;
+  user-select: none;
+  color: #142c2a;
+  background: #3fcdc3;
+  &:hover {
+    color: #3fcdc3;
+    background-color: transparent;
+  }
+  &.activebtn {
+    color: #142c2a;
+    background: #3fcdc3;
+  }
+`;
+
+export const CalcWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 80px 0;
+`;
+
+export const CalcContainer = styled.div`
+  display: flex;
+  height: 424px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  gap: 20px;
+  width: 95%;
+  @media screen and (max-width: 950px) {
+    height: 500px;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 80px;
+    height: auto;
+  }
+`;
+
+export const CalcCard = styled.div`
+  position: relative;
+  max-width: 580px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 14px;
+  box-shadow: 1px 4px 12px rgba(61, 179, 162, 0.25);
+  img {
+    position: absolute;
+    top: -90px;
+    left: 32%;
+    width: 190px;
+    height: auto;
+  }
+  @media screen and (max-width: 768px) {
+    img {
+      width: 140px;
+      top: -65px;
+      left: 38%;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    img {
+      left: 32%;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    img {
+      left: 30%;
+    }
+  }
+`;
+
+export const CalcCardContent = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 32px;
+  background: #22292e;
+  height: 100%;
+  border-radius: 14px;
+  padding: 120px 20px 40px 20px;
+  @media screen and (max-width: 1000px) {
+    padding: 120px 10px 40px 10px;
+  }
+`;
+
+export const CalcContent = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
+`;
+
+export const CalcButton = styled.div`
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  color: #142c2a;
+  background-color: #ff9a3a;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 `;
