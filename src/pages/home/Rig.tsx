@@ -41,7 +41,7 @@ const Rig = () => {
           <h1>Rigrate Distribution</h1>
           <RigBtn>Rigs Search</RigBtn>
         </RigContent>
-        <TableContent>
+        <TableContent className="topbar">
           <RigTable>
             <RigHead>
               {RigHeadData.map((item, key) => (

@@ -50,8 +50,8 @@ html::-webkit-scrollbar-thumb {
   /* background-color: black; */
   background: linear-gradient(
     180deg,
-    rgba(225, 29, 72, 0.1) 0%,
-    rgba(225, 29, 72, 0.1) 100%
+    rgba(59, 58, 59, 0.1) 0%,
+    rgba(58, 56, 56, 0.1) 100%
   );
 }
 .topbar::-webkit-scrollbar-thumb {

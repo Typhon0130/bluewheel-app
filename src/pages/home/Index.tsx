@@ -11,6 +11,7 @@ import Stoke from './Stoke';
 import Farm from './Farm';
 import World from './World';
 import Calc from './Calc';
+import Contact from './Contact';
 
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
         <Farm />
         <World />
         <Calc />
+        <Contact />
       </HomeWrapper>
     </AppLayout>
   )

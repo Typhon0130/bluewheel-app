@@ -39,7 +39,7 @@ const Hashrate = () => {
           <h1>Hashrate Distribution</h1>
           <HashBtn>View All Pools</HashBtn>
         </HashContent>
-        <TableContent>
+        <TableContent className="topbar">
           <HashTable>
             <HashHead>
               {hashHeadData.map((item, key) => (
