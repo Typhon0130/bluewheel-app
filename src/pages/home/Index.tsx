@@ -8,6 +8,9 @@ import Crypto from './Crypto';
 import Hashrate from './Hashrate';
 import Rig from './Rig';
 import Stoke from './Stoke';
+import Farm from './Farm';
+import World from './World';
+import Calc from './Calc';
 
 
 const Home = () => {
@@ -21,6 +24,9 @@ const Home = () => {
         <Stoke />
         <Rig />
         <Crypto />
+        <Farm />
+        <World />
+        <Calc />
       </HomeWrapper>
     </AppLayout>
   )
