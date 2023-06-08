@@ -550,7 +550,7 @@ export const TableContent = styled.div`
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  overflow-x: scroll;
+  overflow-x: auto;
 `;
 
 export const StokeWrapper = styled.div`
@@ -1116,4 +1116,130 @@ export const CalcButton = styled.div`
   font-size: 16px;
   transition: all 0.3s;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+`;
+
+export const ContactWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: url("assets/imgs/contact.png") no-repeat;
+  background-size: cover;
+  margin: 80px 0;
+`;
+
+export const ContactContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 80px 0;
+`;
+
+export const ContactContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 16px;
+  padding-bottom: 40px;
+  @media screen and (max-width: 425px) {
+    padding-bottom: 0px;
+  }
+  text-align: center;
+  h1 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    @media screen and (max-width: 930px) {
+      font-size: 36px;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 28px;
+      line-height: 48px;
+    }
+  }
+  p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    @media screen and (max-width: 425px) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+`;
+
+export const ContactBox = styled.div`
+  transform: translateY(105px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 450px;
+  width: 90%;
+  gap: 20px;
+  border-radius: 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.0396) 0%,
+    rgba(255, 255, 255, 0.1008) 100%
+  );
+  border: 0.217682px solid #ffffff;
+  backdrop-filter: blur(2.44892px);
+  padding: 40px 20px;
+  input {
+    background: transparent;
+    border-style: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    max-width: 430px;
+    width: 100%;
+    padding: 0px 0px 12px 10px;
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+`;
+
+export const ContactBtn = styled.div`
+  cursor: pointer;
+  height: 36px;
+  flex: none;
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #3fcdc3;
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  transition: all 0.3s;
+  user-select: none;
+  color: #142c2a;
+  background: #3fcdc3;
+  max-width: 430px;
+  width: 100%;
+  &:hover {
+    color: #3fcdc3;
+    background-color: transparent;
+  }
+  &.activebtn {
+    color: #142c2a;
+    background: #3fcdc3;
+  }
 `;
