@@ -60,3 +60,9 @@ html::-webkit-scrollbar-thumb {
   background-color: #777;
   background-clip: content-box;
 }
+
+
+a {
+  text-decoration: none;
+  color: #fff;
+}

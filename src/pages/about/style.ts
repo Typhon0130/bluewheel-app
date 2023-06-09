@@ -83,6 +83,9 @@ export const TeamContainer = styled.div`
   max-width: 1200px;
   gap: 40px;
   width: 95%;
+  @media screen and (max-width: 768px) {
+    align-items: center;
+  }
   h1 {
     font-style: normal;
     font-weight: 400;
@@ -90,6 +93,9 @@ export const TeamContainer = styled.div`
     line-height: 59px;
     span {
       color: #5cf8e5;
+    }
+    @media screen and (max-width: 768px) {
+      text-align: center;
     }
     @media screen and (max-width: 375px) {
       font-size: 32px;
@@ -106,6 +112,9 @@ export const AdvisorContainer = styled.div`
   max-width: 1200px;
   gap: 40px;
   width: 95%;
+  @media screen and (max-width: 768px) {
+    align-items: center;
+  }
   h1 {
     font-style: normal;
     font-weight: 400;
@@ -136,6 +145,14 @@ export const CardContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  a {
+    @media screen and (max-width: 425px) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 `;
 
@@ -168,9 +185,12 @@ export const Card = styled.div`
   border-radius: 20px;
   border: 1px solid transparent;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
   &:hover {
     border: 1px solid #5cf8e5;
+  }
+  @media screen and (max-width: 425px) {
+    width: 100%;
   }
   img {
     max-width: 150px;
