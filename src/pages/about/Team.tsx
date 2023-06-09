@@ -8,7 +8,7 @@ import {
   CardContent,
   Card,
   CardIcons,
-  CardDesc
+  CardDesc,
 } from "./style";
 
 const Teamdata = [
@@ -69,21 +69,25 @@ const Team = () => {
         </h1>
         <CardContainer>
           {Teamdata.map((item, key) => (
-            <Card>
-              <CardDesc>
-                <a href="https://app.gitbook.com/o/D73O4X8dMRchiR4CfZOX/s/QkG4Zb4RUWIIYgCAgyJM/about-us/meet-the-team" target="_blank" rel="noreferrer">
-                <img src={item.img} alt="" />
-                </a>
-                <CardContent>
-                  <p>{item.title}</p>
-                  <span>{item.subtitle}</span>
-                </CardContent>
-              </CardDesc>
-              <CardIcons>
-                <BsTwitter fontSize={'30px'} />
-                <BsLinkedin fontSize={'30px'} />
-              </CardIcons>
-            </Card>
+            <a
+              href="https://app.gitbook.com/o/D73O4X8dMRchiR4CfZOX/s/QkG4Zb4RUWIIYgCAgyJM/about-us/meet-the-advisors"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Card>
+                <CardDesc>
+                  <img src={item.img} alt="" />
+                  <CardContent>
+                    <p>{item.title}</p>
+                    <span>{item.subtitle}</span>
+                  </CardContent>
+                </CardDesc>
+                <CardIcons>
+                  <BsTwitter fontSize={"30px"} />
+                  <BsLinkedin fontSize={"30px"} />
+                </CardIcons>
+              </Card>
+            </a>
           ))}
         </CardContainer>
       </TeamContainer>
@@ -93,18 +97,24 @@ const Team = () => {
         </h1>
         <CardContainer>
           {AdvisorData.map((item, key) => (
-            <Card>
-              <CardDesc>
-                <img src={item.img} alt="" />
-                <CardContent>
-                  <p>{item.title}</p>
-                </CardContent>
-              </CardDesc>
-              <CardIcons>
-                <BsTwitter fontSize={'30px'} />
-                <BsLinkedin fontSize={'30px'} />
-              </CardIcons>
-            </Card>
+            <a
+              href="https://app.gitbook.com/o/D73O4X8dMRchiR4CfZOX/s/QkG4Zb4RUWIIYgCAgyJM/about-us/meet-the-team"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Card>
+                <CardDesc>
+                  <img src={item.img} alt="" />
+                  <CardContent>
+                    <p>{item.title}</p>
+                  </CardContent>
+                </CardDesc>
+                <CardIcons>
+                  <BsTwitter fontSize={"30px"} />
+                  <BsLinkedin fontSize={"30px"} />
+                </CardIcons>
+              </Card>
+            </a>
           ))}
         </CardContainer>
       </AdvisorContainer>
