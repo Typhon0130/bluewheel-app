@@ -43,7 +43,7 @@ const Farm = () => {
     <FarmWrapper>
       <FarmContainer>
         <FarmContent>
-          <h1>Mining Farms</h1>
+          <h1>Our Farms</h1>
           <FarmBtn>View All Farms</FarmBtn>
         </FarmContent>
         <FarmCardWrapper>

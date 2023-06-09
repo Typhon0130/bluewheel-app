@@ -164,6 +164,14 @@ export const Card = styled.div`
   gap: 20px;
   max-width: 280px;
   width: 100%;
+  padding: 40px 0;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all .3s;
+  &:hover {
+    border: 1px solid #5cf8e5;
+  }
   img {
     max-width: 150px;
     max-height: 150px;
@@ -189,9 +197,9 @@ export const CardIcons = styled.div`
   cursor: pointer;
   svg {
     color: #777;
-    transition: all .3s;
+    transition: all 0.3s;
     &:hover {
-     color: #3fcdc3;
+      color: #3fcdc3;
     }
   }
 `;
