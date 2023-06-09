@@ -71,7 +71,9 @@ const Team = () => {
           {Teamdata.map((item, key) => (
             <Card>
               <CardDesc>
+                <a href="https://app.gitbook.com/o/D73O4X8dMRchiR4CfZOX/s/QkG4Zb4RUWIIYgCAgyJM/about-us/meet-the-team" target="_blank" rel="noreferrer">
                 <img src={item.img} alt="" />
+                </a>
                 <CardContent>
                   <p>{item.title}</p>
                   <span>{item.subtitle}</span>
