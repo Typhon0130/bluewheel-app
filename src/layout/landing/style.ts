@@ -28,8 +28,8 @@ export const LandingDesc = styled.div`
   gap: 20px;
   h1 {
     font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
+    font-weight: 600;
+    font-size: 64px;
     line-height: 72px;
     max-width: 830x;
     width: 100%;
@@ -51,7 +51,7 @@ export const LandingDesc = styled.div`
     font-size: 16px;
     line-height: 28px;
     text-align: center;
-    max-width: 560px;
+    max-width: 740px;
     width: 100%;
   }
 `;

@@ -70,7 +70,7 @@ const Stoke = () => {
         <StokeCard>
           <StokeContent>
             <Content>
-              <StokeTitle>Hash Price</StokeTitle>
+              <StokeTitle>Bluewheel Mining - Hashrate</StokeTitle>
               <StokeDesc>
                 The Bitcoin Mining Pools page displays the latest blocks and
                 total hashrate of top mining Bitcoin mining pools.
@@ -85,7 +85,7 @@ const Stoke = () => {
         <StokeCard>
           <StokeContent>
             <Content>
-              <StokeTitle>Hash Price</StokeTitle>
+              <StokeTitle>Bluewheel Mining - Hashrate</StokeTitle>
               <StokeDesc>
                 The Bitcoin Mining Pools page displays the latest blocks and
                 total hashrate of top mining Bitcoin mining pools.

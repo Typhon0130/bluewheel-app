@@ -6,7 +6,7 @@ const Crypto = () => {
     <CryptoWrapper>
       <CryptoContainer>
         <h1>
-          Identify opportunities in <span>Mining Public Markets</span>
+          Identify opportunities in <span>BUY BLUEWHEEL MINING NFT</span>
         </h1>
         <CryptoButton>Crypto Mining Stocks</CryptoButton>
       </CryptoContainer>

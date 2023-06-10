@@ -6,9 +6,10 @@ const Miner = () => {
     <MinerWrapper>
       <MinerContainer>
         <h1>
-          Curated Alpha for <span>Crypto Miners</span>
+          Want to invest in {" "}
+          <span>BITCOIN MINING</span>
         </h1>
-        <MinerButton>Mining Insights</MinerButton>
+        <MinerButton>Buy NFT</MinerButton>
       </MinerContainer>
     </MinerWrapper>
   );

@@ -18,19 +18,15 @@ const RigHeadData = [
   "Payout Method",
   "Share",
   "Blocks Mined",
-  "Avg.Tx Fees Per Block",
-  "Tx Fees Block Reward",
-  "Last Block",
+  "BTC Reward Per th",
 ];
 const bodyData = [
-  "Luxor 🇺🇸",
+  "Bluewheel Mining",
   "6966.10 PH/s",
   "FPPS",
   "1.800%",
   "18",
   " 2.7673",
-  " 44.2769%",
-  "789.101",
 ];
 
 const Rig = () => {
@@ -38,7 +34,7 @@ const Rig = () => {
     <RigWrapper>
       <RigContainer>
         <RigContent>
-          <h1>Rigrate Distribution</h1>
+          <h1>Bluewheel Mining Hashrate Distribution</h1>
           <RigBtn>Rigs Search</RigBtn>
         </RigContent>
         <TableContent className="topbar">

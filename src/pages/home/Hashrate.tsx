@@ -9,14 +9,14 @@ import {
   HashTable,
   HeadItem,
   BodyItem,
-  TableContent
+  TableContent,
 } from "./style";
 
 const hashHeadData = [
   "Model",
   "Release",
   "Hashrate",
-  "Hashrate",
+  "Electricity Efficiency",
   "Efficiency",
   "Daily Revenue",
   "Daily Profit",
@@ -36,7 +36,7 @@ const Hashrate = () => {
     <HashWrapper>
       <HashContainer>
         <HashContent>
-          <h1>Hashrate Distribution</h1>
+          <h1>NFT Hashrate Distribution</h1>
           <HashBtn>View All Pools</HashBtn>
         </HashContent>
         <TableContent className="topbar">

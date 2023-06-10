@@ -27,8 +27,8 @@ export const headerTab = [
     direct: "/#",
   },
   {
-    title: "STOCKS",
-    direct: "/stock",
+    title: "NFT",
+    direct: "/nft",
   },
   {
     title: "BLOG",
