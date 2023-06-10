@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ArticleWrapper,
   ArticleContainer,
@@ -6,30 +6,28 @@ import {
   CardWrapper,
   Card,
   CardBtn,
-  CardContent
+  CardContent,
 } from "./style";
-
+// import articledata from "../../mockup/article.data.json";
 import { BsArrowUpRight } from "react-icons/bs";
+import axios from "axios";
 
-const articledata = [
-  {
-    title: "How BRC-20 inscriptions sent BTC transaction fees to 5-year highs",
-    desc: "BRC-20 inscriptions drove Bitcoin transaction fees to their highest level since 2017. Here’s how.",
-    image: "assets/imgs/article.png",
-  },
-  {
-    title: "How BRC-20 inscriptions sent BTC transaction fees to 5-year highs",
-    desc: "BRC-20 inscriptions drove Bitcoin transaction fees to their highest level since 2017. Here’s how.",
-    image: "assets/imgs/article.png",
-  },
-  {
-    title: "How BRC-20 inscriptions sent BTC transaction fees to 5-year highs",
-    desc: "BRC-20 inscriptions drove Bitcoin transaction fees to their highest level since 2017. Here’s how.",
-    image: "assets/imgs/article.png",
-  },
-];
+interface IArticle {
+  title: string,
+  desc: string,
+  image: string,
+  link: string
+}
 
 const Article = () => {
+  const [articledata, setArticledata] = useState<IArticle[]>([]);
+  axios
+    .get(
+      "https://raw.githubusercontent.com/salimcansatici/mock-data/main/article.data.json"
+    )
+    .then((res) => setArticledata(res.data))
+    .catch((err) => console.log(err));
+
   return (
     <ArticleWrapper>
       <ArticleContainer>
@@ -42,7 +40,9 @@ const Article = () => {
                 <h6>{item.title}</h6>
                 <p>{item.desc}</p>
                 <CardBtn>
-                  Read More <BsArrowUpRight />
+                  <a href={item.link} target="_blank" rel="noreferrer">
+                    Read More <BsArrowUpRight />
+                  </a>
                 </CardBtn>
               </CardContent>
             </Card>
