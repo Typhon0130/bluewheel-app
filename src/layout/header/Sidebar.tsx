@@ -11,17 +11,10 @@ import { Link } from "react-router-dom";
 
 export const headerTab = [
   {
-    title: "Learn",
-    direct: "/",
-  },
-  {
-    title: "Hashrate",
+    title: "HASHRATE",
     direct: "/#",
   },
-  {
-    title: "TOOLS",
-    direct: "/#",
-  },
+
   {
     title: "RIGS",
     direct: "/#",
@@ -34,6 +27,18 @@ export const headerTab = [
     title: "BLOG",
     direct: "/blog",
   },
+  {
+    title: "ABOUT",
+    direct: "/about",
+  },
+  {
+    title: "LEARN",
+    direct: "/#",
+  },
+  {
+    title: "ROADMAP",
+    direct: "/roadmap",
+  },
 ];
 
 type SidebarProps = {
@@ -42,7 +47,7 @@ type SidebarProps = {
 };
 
 const Sidebar = ({ isshow, onClose }: SidebarProps) => {
-  console.log(isshow)
+  console.log(isshow);
   const location = useLocation();
   return (
     <SidebarWrapper isshow={isshow}>
