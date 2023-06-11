@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import {
   ButtonWrapper,
   HeaderContainer,
@@ -14,20 +14,13 @@ import Topbar from "../topbar/Index";
 
 export const headerTab = [
   {
-    title: "Learn",
-    direct: "/",
-  },
-  {
-    title: "Hashrate",
+    title: "HASHRATE",
     direct: "/#",
   },
-  {
-    title: "ROADMAP",
-    direct: "/roadmap",
-  },
+
   {
     title: "RIGS",
-    direct: "/3#",
+    direct: "/#",
   },
   {
     title: "NFT",
@@ -41,6 +34,14 @@ export const headerTab = [
     title: "ABOUT",
     direct: "/about",
   },
+  {
+    title: "LEARN",
+    direct: "/#",
+  },
+  {
+    title: "ROADMAP",
+    direct: "/roadmap",
+  },
 ];
 
 type HeaderProps = {
@@ -49,7 +50,7 @@ type HeaderProps = {
 
 const Header: React.FC<HeaderProps> = ({ onMenuOpen }) => {
   const navigate = useNavigate();
-  const location = useLocation()
+  const location = useLocation();
   const [header, setHeader] = useState(false);
 
   useEffect(() => {
@@ -74,7 +75,16 @@ const Header: React.FC<HeaderProps> = ({ onMenuOpen }) => {
         <HeaderNav>
           {headerTab.length > 0
             ? headerTab.map((item, key) => (
-                <NavItem key={key}><Link to={item.direct}  className={location.pathname === item.direct ? "active" : "" }>{item.title} </Link></NavItem>
+                <NavItem key={key}>
+                  <Link
+                    to={item.direct}
+                    className={
+                      location.pathname === item.direct ? "active" : ""
+                    }
+                  >
+                    {item.title}{" "}
+                  </Link>
+                </NavItem>
               ))
             : ""}
           <ButtonWrapper>Insight</ButtonWrapper>
