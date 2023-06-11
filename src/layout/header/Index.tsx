@@ -22,8 +22,8 @@ export const headerTab = [
     direct: "/#",
   },
   {
-    title: "TOOLS",
-    direct: "/#",
+    title: "ROADMAP",
+    direct: "/roadmap",
   },
   {
     title: "RIGS",
@@ -36,6 +36,10 @@ export const headerTab = [
   {
     title: "BLOG",
     direct: "/blog",
+  },
+  {
+    title: "ABOUT",
+    direct: "/about",
   },
 ];
 
