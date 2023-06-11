@@ -45,7 +45,7 @@ export const HeadLogo = styled.div`
 export const HeaderNav = styled.div`
   display: flex;
   align-items: center;
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 1024px) {
     display: none;
   }
 `;
@@ -88,7 +88,7 @@ export const ButtonWrapper = styled.div`
 
 export const HeaderMobielButton = styled.div`
   display: none;
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 1024px) {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -124,7 +124,7 @@ export const SidebarWrapper = styled.div<{ isshow: boolean | undefined }>`
   background-color: rgba(44, 45, 49);
   color: #fff;
   height: 100vh;
-  @media screen and (min-width: 930px) {
+  @media screen and (min-width: 1024px) {
     display: none;
   }
 `;
