@@ -19,19 +19,19 @@ import { FaMapMarkerAlt, FaRegHeart } from "react-icons/fa";
 
 const cardData = [
   {
-    img: "assets/imgs/farm/1.png",
+    img: "assets/imgs/farm/4.png",
     location: "Pennsylvania, USA",
     Desc: " No Capacity MW Remaining",
     Price: "0.069-0.085",
   },
   {
-    img: "assets/imgs/farm/2.png",
+    img: "assets/imgs/farm/5.png",
     location: "Ohio, USA",
     Desc: " No Capacity MW Remaining",
     Price: "0.069-0.085",
   },
   {
-    img: "assets/imgs/farm/3.png",
+    img: "assets/imgs/farm/6.png",
     location: "United States",
     Desc: " No Capacity MW Remaining",
     Price: "N/A",
