@@ -32,8 +32,8 @@ export const headerTab = [
     direct: "/about",
   },
   {
-    title: "LEARN",
-    direct: "/#",
+    title: "TEAM",
+    direct: "/team",
   },
   {
     title: "ROADMAP",
@@ -68,7 +68,7 @@ const Sidebar = ({ isshow, onClose }: SidebarProps) => {
             ))
           : ""}
       </SidebarNav>
-      <SidebarButton>Insight</SidebarButton>
+      <SidebarButton>STAKE NFT</SidebarButton>
     </SidebarWrapper>
   );
 };

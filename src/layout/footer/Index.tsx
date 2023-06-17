@@ -14,20 +14,6 @@ import { BsFacebook, BsYoutube, BsTwitter, BsLinkedin } from "react-icons/bs";
 
 const tabData = [
   {
-    title: "Analytics",
-    content: [
-      "Data Platform",
-      "Bitcoin Netwrok",
-      "ASIC Index",
-      "Market News",
-      "Crypto Prices",
-    ],
-  },
-  {
-    title: "Collections",
-    content: ["Farms", "Machines", "Coins", "Stocks"],
-  },
-  {
     title: "Tools",
     content: ["Calculator", "Hashrate Converter", "research"],
   },
@@ -35,10 +21,7 @@ const tabData = [
     title: "External",
     content: [
       "About",
-      "Luxor Mining Pool",
       "Terms of Service",
-      "RSS Feed",
-      "API Docs",
     ],
   },
 ];

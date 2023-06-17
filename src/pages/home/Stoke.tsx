@@ -72,8 +72,8 @@ const Stoke = () => {
             <Content>
               <StokeTitle>Bluewheel Mining - Hashrate</StokeTitle>
               <StokeDesc>
-                The Bitcoin Mining Pools page displays the latest blocks and
-                total hashrate of top mining Bitcoin mining pools.
+                This Bitcoin Mining pool displays latest block & total hashrate
+                of Bluewheel Mining operations
               </StokeDesc>
             </Content>
             {/* <StokeView>View</StokeView> */}
@@ -85,10 +85,10 @@ const Stoke = () => {
         <StokeCard>
           <StokeContent>
             <Content>
-              <StokeTitle>Bluewheel Mining - Hashrate</StokeTitle>
+              <StokeTitle>Bluewheel Mining NFT - Hashrate</StokeTitle>
               <StokeDesc>
-                The Bitcoin Mining Pools page displays the latest blocks and
-                total hashrate of top mining Bitcoin mining pools.
+                This Bitcoin Mining pool displays latest block & total hashrate
+                of Bluewheel Mining NFT Holders
               </StokeDesc>
             </Content>
             {/* <StokeView>View</StokeView> */}
