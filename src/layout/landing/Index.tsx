@@ -17,10 +17,10 @@ const LandingPage = () => {
             Bitcoin runs on <span>Hashrate</span>
           </h1>
           <p>
-            Leading in bitcoin mining with sustainable and cost-effective 10 MW
-            mining capacity, supported by 3000 pods across CIS countries.
-            Providing mining management services and dedicated to renewable
-            energy.
+            Bluewheel Mining Leading in bitcoin mining with sustainable and
+            cost-effective 10 MW mining capacity, supported by 3000 pods across
+            CIS countries. Providing mining management services and dedicated to
+            renewable energy.
           </p>
         </LandingDesc>
         <LandBtnOutside>

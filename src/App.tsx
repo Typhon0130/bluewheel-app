@@ -7,6 +7,7 @@ import About from './pages/about/Index';
 import Blog from './pages/blog/Index';
 import Roadmap from './pages/roadmap/Index';
 import Stake from './pages/stake/Index';
+import Team from './pages/team';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/blog' element = {<Blog />} />
         <Route path='/roadmap' element = {<Roadmap />} />
         <Route path='/nft' element = {<Stake />} />
+        <Route path='/team' element = {<Team />} />
       </Routes>
     </Router>
   )

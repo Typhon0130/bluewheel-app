@@ -762,7 +762,7 @@ export const FarmCard = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0px;
-  gap: 24px;
+  gap: 60px;
   background: #212931;
   box-shadow: 1px 4px 12px rgba(61, 179, 162, 0.25);
   border-radius: 7px;

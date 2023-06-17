@@ -35,8 +35,8 @@ export const headerTab = [
     direct: "/about",
   },
   {
-    title: "LEARN",
-    direct: "/#",
+    title: "TEAM",
+    direct: "/team",
   },
   {
     title: "ROADMAP",
@@ -87,7 +87,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuOpen }) => {
                 </NavItem>
               ))
             : ""}
-          <ButtonWrapper>Insight</ButtonWrapper>
+          <ButtonWrapper>STAKE NFT</ButtonWrapper>
         </HeaderNav>
         <HeaderMobielButton onClick={() => onMenuOpen()}>
           <span></span>

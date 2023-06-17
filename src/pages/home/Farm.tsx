@@ -7,15 +7,12 @@ import {
   FarmCardWrapper,
   FarmCard,
   FarmCardContent,
-  FarmCardTitle,
-  FarmCardDesc,
   FarmCardBtn,
   FarmCardPriceBtn,
   FarmCardGridBtn,
-  FarmCardDescContent
 } from "./style";
-import { AiOutlineStar, AiFillDollarCircle } from "react-icons/ai";
-import { FaMapMarkerAlt, FaRegHeart } from "react-icons/fa";
+import { AiFillDollarCircle } from "react-icons/ai";
+import { FaRegHeart } from "react-icons/fa";
 
 const cardData = [
   {
@@ -51,16 +48,6 @@ const Farm = () => {
             <FarmCard>
               <img src={item.img} alt="" />
               <FarmCardContent>
-                <FarmCardDescContent>
-                  <FarmCardTitle>
-                    <FaMapMarkerAlt />
-                    {item.location}
-                  </FarmCardTitle>
-                  <FarmCardDesc>
-                    <AiOutlineStar />
-                    {item.Desc}
-                  </FarmCardDesc>
-                </FarmCardDescContent>
                 <FarmCardBtn>
                   <FarmCardPriceBtn><AiFillDollarCircle /> {item.Price}</FarmCardPriceBtn>
                   <FarmCardGridBtn><FaRegHeart /> Grid Mix</FarmCardGridBtn>

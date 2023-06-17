@@ -18,7 +18,7 @@ export const FooterContainer = styled.div`
   align-items: center;
   padding-top: 80px;
   border-top: 1px solid #8a8a8a;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
     gap: 25px;
   }
@@ -86,7 +86,7 @@ export const FAboutContainer = styled.div`
     width: 60px;
     height: auto;
   }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 768px) {
     flex-direction: row;
     gap: 25px;
     max-width: 100%;
@@ -142,11 +142,7 @@ export const AboutDesc = styled.div`
     font-size: 18px;
     line-height: 34px;
   }
-  @media screen and (max-width: 1024px) {
-    align-items: flex-end;
-    gap: 45px;
-  }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 768px) {
     align-items: flex-end;
     gap: 45px;
   }
