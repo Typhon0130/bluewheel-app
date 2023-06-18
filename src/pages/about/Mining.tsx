@@ -27,7 +27,7 @@ const Mining = () => {
     <MiningWrapper>
       <MiningCotainer>
         <h1>
-          A few key strategies employed by
+          A few key strategies employed by{" "}
           <span>
             Bluewheel Mining which will prove for Bitcoin PoW mining include
           </span>
