@@ -240,7 +240,7 @@ export const FundChart = styled.div``;
 export const FundCard = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0px;
   align-items: center;
   justify-content: flex-start;
   max-width: 250px;
@@ -282,4 +282,181 @@ export const FundCards = styled.div`
   justify-content: space-between;
   width: 100%;
   gap: 30px;
+  @media screen and (max-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    width: 100%;
+  }
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+  }
+`;
+
+export const StrategyWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 80px 0;
+`;
+export const StrategyContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  width: 95%;
+  img {
+    max-width: 40%;
+    width: 100%;
+    height: auto;
+    @media screen and (max-width: 768px) {
+      max-width: 95%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+export const StrategyContent = styled.div`
+  max-width: 560px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    span {
+      color: #5cf8e5;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+`;
+export const StrategyDesc = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+`;
+
+export const StrategyItem = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  img {
+    width: 24px;
+    height: 24px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+`;
+
+export const RenewableWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+`;
+export const RenewableContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 95%;
+  gap: 40px;
+  h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+  }
+`;
+export const RenewablePCost = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 487px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+`;
+export const RenewableCostItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  img {
+    @media screen and (max-width: 768px) {
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+  }
+`;
+export const ItemContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+  }
+`;
+
+export const RenewableContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #8a8a8a;
+  text-align: center;
+  p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+`;
+export const RenewableContentImage = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  @media screen and (max-width: 676px) {
+    flex-direction: column;
+  }
+  img {
+    max-width: 48%;
+    height: auto;
+    @media screen and (max-width: 676px) {
+      max-width: 100%;
+    }
+  }
 `;
