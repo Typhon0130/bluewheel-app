@@ -61,8 +61,12 @@ html::-webkit-scrollbar-thumb {
   background-clip: content-box;
 }
 
-
 a {
   text-decoration: none;
   color: #fff;
+}
+
+.circle-progress__value {
+  stroke: #3fcdc3 !important;
+  stroke-linecap: round !important;
 }
