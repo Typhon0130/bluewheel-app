@@ -18,7 +18,11 @@ import {
   ContentDesc,
   ConditionerBtn,
   CondtionContent,
-  ConditionItems
+  ConditionItems,
+  StakePriceWrapper,
+  PriceCard,
+  StakePriceContent,
+  StakeBuy
 } from "./style";
 import { AppLayout } from "../../layout/Index";
 import LandingPage from "../../layout/landing/Index";
@@ -80,12 +84,37 @@ const conditionData = [
   },
 ];
 
+const priceData = [
+  {
+    img: "assets/imgs/gif/1.gif",
+    usd: "550",
+    qty: "2000",
+  },
+  {
+    img: "assets/imgs/gif/2.gif",
+    usd: "5500",
+    qty: "200",
+  },
+];
+
 const Stake = () => {
   return (
     <AppLayout>
       <LandingPage />
       <StakeWrapper>
         <StakeContainer>
+          <StakePriceWrapper>
+            {priceData.map((item, key) => (
+              <PriceCard>
+                <img src={item.img} alt="" />
+                <StakePriceContent>
+                  <span>USD : {item.usd}</span>
+                  <span>Qty : { item.qty }</span>
+                </StakePriceContent>
+                <StakeBuy>Buy Now</StakeBuy>
+              </PriceCard>
+            ))}
+          </StakePriceWrapper>
           <CoutnerWrapper>
             <CounterContent>
               {counterData.map((item, key) => (
