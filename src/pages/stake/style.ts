@@ -351,3 +351,81 @@ export const ConditionItems = styled.div`
   padding: 80px 0;
   width: 100%;
 `;
+
+export const StakePriceWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+  padding: 80px 0;
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+`;
+export const PriceCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 45%;
+  padding-bottom: 40px;
+  transition: all 0.3s;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid rgba(63, 205, 195, 0.6);
+  &:hover {
+    box-shadow: 1px 4px 12px rgba(61, 179, 162, 0.25);
+  }
+  @media screen and (max-width: 576px) {
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+`;
+export const StakePriceContent = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  span {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #5cf8e5;
+  }
+`;
+
+export const StakeBuy = styled.div`
+  cursor: pointer;
+  height: 40px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 4px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #3fcdc3;
+  color: #3fcdc3;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  transition: all 0.3s;
+  padding: 6px 16px;
+  transition: all .3s;
+  &:hover {
+    background: #3fcdc3;
+    color: #142c2a;
+  }
+`;

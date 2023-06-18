@@ -6,13 +6,13 @@ import {
   FarmBtn,
   FarmCardWrapper,
   FarmCard,
-  FarmCardContent,
-  FarmCardBtn,
-  FarmCardPriceBtn,
-  FarmCardGridBtn,
+  // FarmCardContent,
+  // FarmCardBtn,
+  // FarmCardPriceBtn,
+  // FarmCardGridBtn,
 } from "./style";
-import { AiFillDollarCircle } from "react-icons/ai";
-import { FaRegHeart } from "react-icons/fa";
+// import { AiFillDollarCircle } from "react-icons/ai";
+// import { FaRegHeart } from "react-icons/fa";
 
 const cardData = [
   {
@@ -47,12 +47,12 @@ const Farm = () => {
           {cardData.map((item, key) => (
             <FarmCard>
               <img src={item.img} alt="" />
-              <FarmCardContent>
+              {/* <FarmCardContent>
                 <FarmCardBtn>
                   <FarmCardPriceBtn><AiFillDollarCircle /> {item.Price}</FarmCardPriceBtn>
                   <FarmCardGridBtn><FaRegHeart /> Grid Mix</FarmCardGridBtn>
                 </FarmCardBtn>
-              </FarmCardContent>
+              </FarmCardContent> */}
             </FarmCard>
           ))}
         </FarmCardWrapper>
