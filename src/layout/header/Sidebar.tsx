@@ -68,7 +68,7 @@ const Sidebar = ({ isshow, onClose }: SidebarProps) => {
             ))
           : ""}
       </SidebarNav>
-      <SidebarButton>STAKE NFT</SidebarButton>
+      <SidebarButton><Link to={"/stake"}>STAKE NFT</Link></SidebarButton>
     </SidebarWrapper>
   );
 };

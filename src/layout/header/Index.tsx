@@ -87,7 +87,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuOpen }) => {
                 </NavItem>
               ))
             : ""}
-          <ButtonWrapper>STAKE NFT</ButtonWrapper>
+          <ButtonWrapper><Link to={"/stake"}>STAKE NFT</Link></ButtonWrapper>
         </HeaderNav>
         <HeaderMobielButton onClick={() => onMenuOpen()}>
           <span></span>

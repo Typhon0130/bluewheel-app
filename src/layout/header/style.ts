@@ -11,7 +11,7 @@ export const HeaderWrapper = styled.div`
   left: 0;
   z-index: 10;
   background-color: transparent;
-  transition: all .4s;
+  transition: all 0.4s;
   &.header {
     background-color: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
@@ -78,12 +78,16 @@ export const ButtonWrapper = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 6px;
-  color: #142C2A;
+  color: #142c2a;
   background-color: #3fcdc3;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   transition: all 0.3s;
+  a {
+    text-decoration: none;
+    color: #142c2a;
+  }
 `;
 
 export const HeaderMobielButton = styled.div`
@@ -191,4 +195,8 @@ export const SidebarButton = styled.div`
   font-weight: 600;
   font-size: 16px;
   transition: all 0.3s;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
 `;
