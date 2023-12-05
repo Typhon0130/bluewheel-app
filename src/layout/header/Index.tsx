@@ -23,10 +23,6 @@ export const headerTab = [
     direct: "/#",
   },
   {
-    title: "NFT",
-    direct: "/nft",
-  },
-  {
     title: "BLOG",
     direct: "/blog",
   },
@@ -87,7 +83,9 @@ const Header: React.FC<HeaderProps> = ({ onMenuOpen }) => {
                 </NavItem>
               ))
             : ""}
-          <ButtonWrapper><Link to={"/stake"}>STAKE NFT</Link></ButtonWrapper>
+          <ButtonWrapper>
+            <Link to={"/stake"}>STAKE NFT</Link>
+          </ButtonWrapper>
         </HeaderNav>
         <HeaderMobielButton onClick={() => onMenuOpen()}>
           <span></span>
