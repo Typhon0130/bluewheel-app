@@ -6,10 +6,14 @@ import {
   LandBtnOutside,
   LandBtnInside,
 } from "./style";
+import TeamLogo from "../../assets/img/team-logo.png";
 
 const LandingPage = () => {
   return (
     <LandingWrapper>
+      <div className="team-logo">
+        <img src={TeamLogo} alt="team logo" />
+      </div>
       {/* <img src="/assets/imgs/landing-2.png" alt="" /> */}
       <LandingContainer>
         <LandingDesc>

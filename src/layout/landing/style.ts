@@ -9,6 +9,17 @@ export const LandingWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  .team-logo {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    z-index: 56;
+    max-width: 300px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 `;
 
 export const LandingContainer = styled.div`
